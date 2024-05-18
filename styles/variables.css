@@ -1,8 +1,8 @@
 :root {
-  --nav-bar-color:rgba(255, 0, 112, 1);
+  --nav-bar-color: rgba(255, 0, 112, 1);
   --accent-color: rgba(255, 0, 112, 1);
-  --description-text-color:#F1B2CE;
-  --h1-title-color: #DB00FF;
-  --background-color-page:rgba(0, 0, 40, 1);
-  --nav-bar-color-hover:#FF007066;
+  --description-text-color: #f1b2ce;
+  --h1-title-color: #db00ff;
+  --background-color-page: rgba(0, 0, 40, 1);
+  --nav-bar-color-hover: #ff007066;
 }
