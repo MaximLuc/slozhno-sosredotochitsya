@@ -6,13 +6,7 @@
   --h1-title-color: #db00ff;
   --background-color-page: rgba(0, 0, 40, 1);
   --nav-bar-color-hover: #ff007066;
-}
-
-.page.theme_dark .decorated-zone {
-  background-image: url("../images/cover-image-dark.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  --background-image:  url("../images/cover-image-dark.png");
 }
 
 .page.theme_dark .header__rec {
