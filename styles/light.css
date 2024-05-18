@@ -7,6 +7,17 @@
   --nav-bar-color-hover: #32312d66;
 }
 
+@media (prefers-color-scheme: light) {
+  :root.theme_light {
+    --nav-bar-color: #353430;
+    --accent-color: #ff8dcb;
+    --description-text-color: #353430;
+    --h1-title-color: #ffc2e6;
+    --background-color-page: #fff1f7;
+    --nav-bar-color-hover: #32312d66;    
+    }
+}
+
 .page.theme_light .decorated-zone {
   background-image: url("../images/cover-image-light.png");
   background-size: cover;
