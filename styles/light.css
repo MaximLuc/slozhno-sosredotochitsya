@@ -6,6 +6,7 @@
   --background-color-page: #fff1f7;
   --nav-bar-color-hover: #32312d66;
 }
+
 .page.theme_light .decorated-zone {
   background-image: url("../images/cover-image-light.png");
   background-size: cover;
@@ -21,7 +22,6 @@
   display: none;
 }
 
-
 .page.theme_light .header__rec__container {
   position: absolute;
   top: 20px;
@@ -30,7 +30,6 @@
   justify-content: right;
   border-top: 1px solid var(--nav-bar-color);
   border-right: 1px solid var(--nav-bar-color);
-
 }
 
 .page.theme_light .circle__container__header {

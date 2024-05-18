@@ -1,3 +1,4 @@
+
 .page.theme_dark {
   --nav-bar-color: rgba(255, 0, 112, 1);
   --accent-color: rgba(255, 0, 112, 1);
@@ -6,6 +7,7 @@
   --background-color-page: rgba(0, 0, 40, 1);
   --nav-bar-color-hover: #ff007066;
 }
+
 .page.theme_dark .decorated-zone {
   background-image: url("../images/cover-image-dark.png");
   background-size: cover;
