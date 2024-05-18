@@ -404,6 +404,7 @@
     max-width: 236px;
   }
 
+
   .chapter__title-consentration {
     padding-top: 6px;
   }
@@ -418,10 +419,10 @@
     max-width: 364px;
     max-height: 125px;
   }
-
+/* 
   .concentration__section-images {
     padding-top: 20px;
-  }
+  } */
 
   .header__description__wrap {
     white-space: nowrap;
