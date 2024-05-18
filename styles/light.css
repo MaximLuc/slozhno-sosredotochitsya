@@ -29,8 +29,6 @@
     
     .header__rec__container {
       position: absolute;
-      top: 20px;
-      right: 20px;
       align-items: top;
       justify-content: right;
       border-top: 1px solid var(--nav-bar-color);
@@ -39,7 +37,7 @@
     
     .circle__container__header {
       border: none;
-      margin: 17px 14px 5px 5px;
+      margin: 17px 18px 5px 5px;
     }
   
 }
@@ -54,8 +52,6 @@
 
 .page.theme_light .header__rec__container {
   position: absolute;
-  top: 20px;
-  right: 20px;
   align-items: top;
   justify-content: right;
   border-top: 1px solid var(--nav-bar-color);
@@ -64,5 +60,5 @@
 
 .page.theme_light .circle__container__header {
   border: none;
-  margin: 17px 14px 5px 5px;
+  margin: 17px 18px 5px 5px;
 }
