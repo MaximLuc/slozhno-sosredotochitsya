@@ -1,9 +1,9 @@
 :root {
-  --nav-bar-color: #353430;
-  --accent-color: #ff8dcb;
-  --description-text-color: #353430;
-  --h1-title-color: #ffc2e6;
-  --background-color-page: #fff1f7;
-  --nav-bar-color-hover: #32312d66;
 
+  --nav-bar-color: rgba(255, 0, 112, 1);
+  --accent-color: rgba(255, 0, 112, 1);
+  --description-text-color: #f1b2ce;
+  --h1-title-color: #db00ff;
+  --background-color-page: rgba(0, 0, 40, 1);
+  --nav-bar-color-hover: #ff007066;
 }

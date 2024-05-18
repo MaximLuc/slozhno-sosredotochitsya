@@ -1,15 +1,38 @@
-/*
-  Специально для тёмной темы при наличии класса,
-  здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
+.page.theme_light {
+  --nav-bar-color: #353430;
+  --accent-color: #ff8dcb;
+  --description-text-color: #353430;
+  --h1-title-color: #ffc2e6;
+  --background-color-page: #fff1f7;
+  --nav-bar-color-hover: #32312d66;
+}
 
-/* .page.theme_dark {
-  --nav-bar-color:rgba(255, 0, 112, 1);
-  --accent-color: rgba(255, 0, 112, 1);
-  --description-text-color:#F1B2CE;
-}  */
-/* :root {
-  --accent-color: rgba(255, 0, 112, 1);
-  --description-text-color:#F1B2CE;
-} */
+.page.theme_light .decorated-zone {
+  background-image: url("../images/cover-image-light.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.page.theme_light .header__rec {
+  display: none;
+}
+
+.page.theme_light .circle__header {
+  display: none;
+}
+
+.page.theme_light .header__rec__container {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  align-items: top;
+  justify-content: right;
+  border-top: 1px solid var(--nav-bar-color);
+  border-right: 1px solid var(--nav-bar-color);
+}
+
+.page.theme_light .circle__container__header {
+  border: none;
+  margin: 17px 13px 5px 5px;
+}

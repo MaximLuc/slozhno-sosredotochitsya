@@ -1,10 +1,4 @@
-/*
-  Специально для светлой темы при наличии класса.
-  Здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
-
-.page.theme_light {
+.page.theme_dark {
   --nav-bar-color: rgba(255, 0, 112, 1);
   --accent-color: rgba(255, 0, 112, 1);
   --description-text-color: #f1b2ce;
@@ -13,18 +7,18 @@
   --nav-bar-color-hover: #ff007066;
 }
 
-.page.theme_light .decorated-zone {
-  background-image: url("../images/cover-image-light.png");
+.page.theme_dark .decorated-zone {
+  background-image: url("../images/cover-image-dark.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-.page.theme_light .header__rec {
+/* .page.theme_light .header__rec {
   display: none;
-}
+} */
 
-.page.theme_light .circle__header {
+/* .page.theme_light .circle__header {
   display: none;
 }
 
@@ -41,4 +35,4 @@
 .page.theme_light .circle__container__header {
   border: none;
   margin: 17px 13px 5px 5px;
-}
+} */
