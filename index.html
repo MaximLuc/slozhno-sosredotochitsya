@@ -4,6 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="dark light"> 
+    <link rel="stylesheet" href="./styles/globals.css">
+    <link rel="stylesheet" href="./styles/variables.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/dark.css">
+    <link rel="stylesheet" href="./styles/light.css">
+    <link rel="icon" type="image/png" href="./images/favicon.ico">
+    <link rel="stylesheet" href="./fonts/fonts.css">
     <title>Сложно сосредоточиться</title>
   </head>
   <body class="page">
@@ -34,7 +42,185 @@
           </li>
         </ul>
       </nav>
+
+      <div class="header__rec__container" aria-hidden="true">
+        <p class="header__rec">REC<div class="REC_circle"></div></p>
+        <div class="circle__container__header">
+          <div class="circle__header"></div>
+        </div>
+      </div>
+      <div class="header__title__container">
+        <h1 class="header__title">no focus</h1>
+      </div>
+
+      <div class="header__description__container">
+        <p class="header__description">Что делать, когда не можешь делать ничего 
+          Или почему нам так сложно <span class="header__description__wrap">сконцентрироваться, 
+          особенно</span> когда очень надо
+        </p>
+      </div>
+
+      <div class="dark__theam__border__container">
+        <div class="dark__theam__border"></div>
+      </div>
     </header>
+
+    <main>
+      <section class="concentration__section concentration__section-top">
+        
+        <div class="hard__to__concentrate__container">
+          <h3 class="chapter__title">Почему сосредоточиться так сложно</h3>
+          <div class="explanations__container explanations__multitasking__container">
+            <h3 class="explanations__title">
+              Многозадачность
+            </h3>  
+            <p class="explanations__description ">
+              Особенно сложно сосредоточиться, когда задач много и все они — важные. Где же легендарная многозадачность,
+              когда она так нужна вам (и всем нанимающим менеджерам этого мира)? А дело в том, что её просто не существует.
+              Исследователи <a class="explanations__description__link" href="https://dana.org/article/multicosts-of-multitasking/">выяснили</a>, что мозгу тяжело концентрироваться даже на двух делах одновременно. А когда в поле внимания
+              попадает несколько важных задач, организм паникует и выделяет кортизол и адреналин — «гормоны стресса». Из-за этого
+              мы работаем невнимательно: ошибаемся и быстро устаём.
+            </p>
+          </div>
+          <div class="explanations__container explanations__dopamine__container">
+            <h3 class="explanations__title">
+              Дофамин
+            </h3>  
+            <p class="explanations__description ">
+              С гормонами стресса всё понятно, но дальше — ещё интереснее. В нашей невозможности сосредоточиться замешана и полная
+              противоположность стрессу — дофамин. Это вещество участвует в системе вознаграждения мозга. Причём тут он? Мы часто отвлекаемся
+              от важной задачи на что-то более «приятное» для мозгов. Например, смотрим лайки в соцсетях. В это время и выделяется дофамин — и мы
+              чувствуем удовольствие. Получается замкнутый круг: чем больше отвлекаешься, тем больше удовольствия получаешь.
+            </p>
+          </div>
+        </div>
+
+      </section>
+      <section class="concentration__section ">
+        <h3 class="chapter__title chapter__title-consentration">Что снижает концентрацию 
+          внимания?
+        </h3>
+        <div class="decrease__in__concentration__container">
+          <div class="explanations__container decrease__in__concentration__explanations__multitasking__container">
+            <h3 class="explanations__title">
+              Многозадачность
+            </h3>  
+            <p class="explanations__description explanations__description__mobile__class ">
+              Как концентрация может снижаться из-за… концентрации? Любая стрессовая ситуация 
+              (и резко меняющийся мир в целом) заставляет наш мозг постоянно «сканировать» окружающую среду на предмет 
+              опасности. Например, читать новости вместо работы. Но быть собранными всё время — невозможно. Концентрация — мышца,
+               и она может не выдержать, если не давать ей отдохнуть.
+            </p>
+          </div>
+
+          <div class="explanations__container decrease__in__concentration__explanations__food__container">
+            <h3 class="explanations__title">
+              Еда
+            </h3>  
+            <p class="explanations__description explanations__description__mobile__class">
+              «Быстрые углеводы» — сахар, белый хлеб, сладости — молниеносно доставляют в мозг энергию и помогают ему 
+              лучше работать. Но уходит эта энергия также быстро, как и приходит. А мы в результате попадаем на «углеводные качели»:
+              как только действие «быстрых углеводов» заканчивается, мы чувствуем усталость и сонливость. И хотим ещё больше быстрых углеводов.
+            </p>
+          </div>
+
+          <div class="explanations__container decrease__in__concentration__explanations__gadget__container">
+            <h3 class="explanations__title">
+              Гаджеты
+            </h3>  
+            <p class="explanations__description explanations__description__mobile__class">
+              Да-да, это та самая ситуация, когда на экране ноутбука — код, в наушниках — подкаст, а на компьютере фоном — ещё и
+              видео с забавными утятами. В результате мозг пытается переключиться с одной задачи на другую — и просто не может.
+              А чтобы вернуться к состоянию полной концентрации, человеку в среднем нужно 20 минут. Вот и получается, что чем больше времени
+              мы проводим в гаджетах, тем больше времени затем нужно, чтобы вернуться к работе.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="concentration__section concentration__section-top">
+        
+        <div class="how__to__concentrate__better__container">
+          <h3 class="chapter__title chapter__title-bolt">Как концентрироваться лучше, чем золотая рыбка (то есть дольше трёх секунд)</h3>
+          <div class="explanations__container imagine_the_sky_container">
+            <h3 class="explanations__title">5 простых (на самом деле не очень) советов</h3>
+            <h3 class="explanations__title explanations__title_card">Представьте небо и облака</h3>
+            <p class="explanations__description">
+              Или листья в ручье. Тут дело в лёгкой медитации, которая помогает успокоиться. Ведь часто именно тревожные мысли о
+              сложных задачах как раз и мешают эти сложные задачи делать. В такие моменты можно закрыть глаза и представить, что
+              чистое небо — это вы, а облака — тревожные мысли. И сколько бы их ни было — ясное небо всегда будет где-то там, за тучами,
+              и никуда не денется. Это упражнение поможет вернуться в настоящий момент, а не волноваться о потенциальных проблемах из будущего.
+            </p>
+          </div>
+          <div class="explanations__container turn__on__music_container">
+            <h3 class="explanations__title explanations__title_card">Включите музыку</h3>
+            <p class="explanations__description">
+              Но не любую, и не любимую. Любимая может быть связана с сильными положительными эмоциями, которые тоже очень
+              сильно отвлекают. Подойдёт тихая, спокойная, умеренно-ритмичная. Можно вообще попробовать включить плейлист в
+              «белым шумом» или нейромузыкой.
+            </p>
+          </div>
+          <div class="explanations__container take__walk_container">
+            <h3 class="explanations__title explanations__title_card">Прогуляйтесь</h3>
+            <p class="explanations__description explanations__description_pre-line">Или даже пробегитесь. Лучше найти парк или 
+              лес: один эксперимент <a class="explanations__description__link" href="https://www.figma.com/exit?url=https%3A%2F%2Fwww.sciencedirect.com%2Fscience%2Farticle%2Fabs%2Fpii%2FS0272494415000328">показал</a>, что
+              созерцание природы повышает концентрацию,
+              в то время как после просмотра городских
+              пейзажей она наоборот понижается. Можно
+              совместить прогулку
+               с физическими упражнениями или бегом
+              — так в мозг поступит ещё больше кислорода и 
+              он будет лучше работать. Но и
+               простая двадцатиминутная прогулка — тоже 
+               отличный вариант.
+            </p>
+          </div>
+          <div class="explanations__container eat__well_container">
+            <h3 class="explanations__title explanations__title_card">Хорошо ешьте</h3>
+            <p class="explanations__description explanations__description_pre-line">Мы — не ваша бабушка, но это правда важно. 
+              Выбирайте продукты, которые препятствуют 
+              резким скачкам сахара в крови. Например, с
+              высоким содержанием клетчатки:овощи,
+               ягоды, бобовые (нут, чечевица, фасоль),
+              коричневый рис, хлеб из цельнозерновой 
+              пшеницы
+            </p>
+          </div>
+          <div class="explanations__container read_container">
+            <h3 class="explanations__title explanations__title_card">Читайте</h3>
+            <p class="explanations__description">
+              Настоящие бумажные книги. Это правда помогает с концентрацией: чтобы прочитать пост в соцсети,
+              достаточно нескольких минут или даже секунд. А вот интересная книга способна затянуть и на несколько часов
+              и круто тренирует направленное внимание.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="concentration__section concentration__section-top concentration__section-images">
+        <h3 class="explanations__title explanations__title-images">
+          А можно в картинках?
+        </h3>
+        <div class="image__section">
+          <img class="sunset__image" src="./images/sunset.png" alt="Закат на фоне моря и гор">
+          <img class="ice-cream__image" src="./images/ice-cream.png" alt="Мороженое с улыбкой">
+          <img class="tape__image" src="./images/tape.png" alt="Касета">
+          <img class="books__image" src="./images/books.png" alt="Стопка книг">
+          <img class="street__image" src="./images/street.png" alt="изображение улицы">
+
+
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__focus__container">
+        <h1 class="footer__focus">focus</h1>
+        <div class="dark__theam__border__bottom__container">
+          <div class="dark__theam__border__bottom"></div>
+        </div>
+        <div class="dark__theam__border__top__container">
+          <div class="dark__theam__border__top"></div>
+        </div>
+      </div>
+    </footer>
     <script src="./scripts/script.js"></script>
   </body>
 </html>
