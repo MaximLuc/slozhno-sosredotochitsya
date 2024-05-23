@@ -3,46 +3,13 @@
   --nav-bar-color: rgba(255, 0, 112, 1);
   --accent-color: rgba(255, 0, 112, 1);
   --description-text-color: #f1b2ce;
-  --h1-title-color: #db00ff;
+  --header-title-color: #db00ff;
   --background-color-page: rgba(0, 0, 40, 1);
   --nav-bar-color-hover: #ff007066;
   --background-image:  url("../images/cover-image-dark.png");
+  --color-description-title:#000028;
 }
 
-.page.theme_dark .header__rec {
-  display: inline;
-  color: var(--accent-color);
-  font-family: "IBM Plex Mono", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 25px;
-}
-
-.page.theme_dark .circle__header {
-  display: inline-block;
-  position: relative;
-  width: 9px;
-  height: 9px;
-  border-radius: 50%;
-  margin: 5px 8px 4px 7px;
-  background-color: var(--accent-color);
-}
-
-.page.theme_dark .header__rec__container {
-  border: none;
-  position: absolute;
-  /* top: 20px;
-  right: 20px; */
-  display: flex;
-  gap: 1px;
-  align-items: center;
-  justify-content: center;
-}
-
-.page.theme_dark .circle__container__header {
-  margin: 0;
-  padding: 2px 0px 0px 0px;
-  border-top: 1px solid var(--nav-bar-color);
-  border-right: 1px solid var(--nav-bar-color);
+.page.theme_dark .rec-container {
+  display: block;
 }
