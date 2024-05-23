@@ -1,4 +1,3 @@
-
 .page {
   background-color: var(--background-color-page);
   background-attachment: fixed;
@@ -10,7 +9,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  background-image:var(--background-image);
+  background-image: var(--background-image);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -54,14 +53,14 @@
 
 .header__theme-menu-button_active {
   border: 1px solid currentColor;
-  pointer-events: none; 
+  pointer-events: none;
 }
 
 .rec-container {
   position: absolute;
-  top: 20px; 
-  right: 30px; 
-  font-family: "IBM Plex Mono",monospace;
+  top: 20px;
+  right: 30px;
+  font-family: "IBM Plex Mono", monospace;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -70,24 +69,23 @@
 }
 
 .rec-container::after {
-  content: '';
+  content: "";
   display: inline-block;
-  width: 9px; 
-  height: 9px; 
-  background-color: var(--accent-color); 
-  border-radius: 50%; 
-  margin-left: 8px; 
+  width: 9px;
+  height: 9px;
+  background-color: var(--accent-color);
+  border-radius: 50%;
+  margin-left: 8px;
   margin-bottom: 3px;
-  vertical-align: middle; 
-  box-shadow: 0px 0px 4px 2px  var(--accent-color);
+  vertical-align: middle;
+  box-shadow: 0px 0px 4px 2px var(--accent-color);
   background-color: var(--accent-color);
 }
-
 
 .header__title__container {
   grid-area: 2 / 1 / span 1 / span 3;
   align-self: center;
-} 
+}
 
 .header__title {
   font-family: "IBM Plex Mono", monospace;
@@ -121,7 +119,7 @@
 
 .corner-borders::before,
 .corner-borders::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 25px;
   height: 25px;
@@ -131,30 +129,29 @@
 .corner-borders::before {
   top: 20px;
   right: 20px;
-  border-top: 1px solid var(--nav-bar-color);;
-  border-right: 1px solid var(--nav-bar-color);;
+  border-top: 1px solid var(--nav-bar-color);
+  border-right: 1px solid var(--nav-bar-color);
 }
 
 .corner-borders::after {
   bottom: 20px;
   left: 20px;
-  border-bottom: 1px solid var(--nav-bar-color);;
-  border-left: 1px solid var(--nav-bar-color);;
+  border-bottom: 1px solid var(--nav-bar-color);
+  border-left: 1px solid var(--nav-bar-color);
 }
 
 .hard__to__concentrate__container {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  grid-template-rows : 1fr auto;
+  grid-template-rows: 1fr auto;
   margin: 60px 0px;
   grid-row-gap: 20px;
   column-gap: 12px;
 }
 
-.hard__to__concentrate__container:last-child{
+.hard__to__concentrate__container:last-child {
   grid-row-gap: 0px;
 }
-
 
 .chapter__title {
   color: var(--nav-bar-color);
@@ -167,12 +164,12 @@
   white-space: pre-line;
 }
 
-.hard__to__concentrate__paragrafs__container{
+.hard__to__concentrate__paragrafs__container {
   grid-area: 1 / 2 / span 1 / span 1;
 }
 
 .explanations__title {
-  font-family: "IBM Plex Mono",monospace;
+  font-family: "IBM Plex Mono", monospace;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -182,7 +179,7 @@
   margin-bottom: 10px;
 }
 
-.chapter__title-consentration{
+.chapter__title-consentration {
   margin-bottom: 20px;
 }
 
@@ -196,7 +193,7 @@
   padding-bottom: 24px;
 }
 
-.hard__to__concentrate__explanations__description{
+.hard__to__concentrate__explanations__description {
   padding-bottom: 20px;
 }
 
@@ -243,7 +240,7 @@
   line-height: 23px;
 }
 
-.explanations__title_card_start{
+.explanations__title_card_start {
   margin-top: 20px;
 }
 
@@ -256,7 +253,7 @@
   position: relative;
 }
 
-.card_image_containe{
+.card_image_containe {
   object-fit: contain;
 }
 
@@ -286,7 +283,7 @@
   max-width: 100%;
 }
 
-.street__image{
+.street__image {
   margin-top: 5px;
   grid-area: 3 / 2 / span 2 / span 2;
   width: 100%;
@@ -353,7 +350,8 @@
   margin: 24px 19px 5px 5px;
 }
 
-@media (max-width : 768px){
+@media (max-width: 768px) {
+
   .decorated-zone {
     row-gap: 50px;
   }
@@ -364,7 +362,6 @@
     align-self: flex-end;
     grid-column: 3;
     padding-right: 20px;
- 
   }
 
   .header__theme-menu-list {
@@ -372,11 +369,11 @@
     row-gap: 15px;
   }
 
-  .hard__to__concentrate__container{
+  .hard__to__concentrate__container {
     gap: 20px;
   }
 
-  .how__to__concentrate__better__container{
+  .how__to__concentrate__better__container {
     padding-top: 0;
   }
 
@@ -411,11 +408,11 @@
     grid-column-gap: 20px;
   }
 
-  .explanations__description{
+  .explanations__description {
     padding-bottom: 23px;
   }
 
-  .hard__to__concentrate__explanations__description{
+  .hard__to__concentrate__explanations__description {
     padding-bottom: 21px;
   }
 
@@ -431,8 +428,8 @@
     grid-area: 3 / 1 / span 1 / span 1;
   }
 
-  .street__image{
-    width:100%;
+  .street__image {
+    width: 100%;
     object-fit: contain;
     height: 100%;
     margin-top: 0px;
@@ -440,7 +437,7 @@
 
 }
 
-@media (max-width :  375px){
+@media (max-width: 375px) {
 
   .decorated-zone {
     row-gap: 20px;
@@ -448,12 +445,12 @@
   }
 
   .rec-container {
-    top: 10px; 
-    right: 19px; 
+    top: 10px;
+    right: 19px;
   }
 
   .rec-container::after {
-    margin-left: 10px; 
+    margin-left: 10px;
   }
 
   .explanations__description__mobile__class {
@@ -468,11 +465,11 @@
     margin: 20px 10px 20px 10px;
   }
 
-  .explanations__description_pre-line{
+  .explanations__description_pre-line {
     white-space: normal;
   }
-  
-  .explanations__container{
+
+  .explanations__container {
     padding-bottom: 5px;
   }
 
@@ -512,13 +509,13 @@
     top: 10px;
     right: 10px;
   }
-  
+
   .corner-borders::after {
     bottom: 10px;
     left: 10px;
   }
 
-  .chapter__title-consentration{
+  .chapter__title-consentration {
     margin-bottom: 0;
   }
 
@@ -537,7 +534,7 @@
     margin: 0px 0px;
   }
 
-  .hard__to__concentrate__paragrafs__container{
+  .hard__to__concentrate__paragrafs__container {
     grid-area: 2 / 1 / span 1 / span 1;
   }
 
@@ -586,7 +583,7 @@
     grid-area: 6 / 1 / span 1 / span 1;
   }
 
-  .hard__to__concentrate__explanations__description{
+  .hard__to__concentrate__explanations__description {
     padding-bottom: 18px;
   }
 
@@ -606,7 +603,6 @@
   .sunset__image {
     grid-area: 1 / 1 / span 1 / span 1;
     height: 100%;
-
   }
 
   .ice-cream__image {
@@ -638,5 +634,5 @@
     font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
     margin-top: 64px;
   }
-
+  
 }
