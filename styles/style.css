@@ -1,18 +1,23 @@
+/* * { outline: 1px solid blue; } */
+
 .page {
+  width: 100%;
   background-color: var(--background-color-page);
+  background-image: var(--background-image);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   background-attachment: fixed;
 }
 
 .decorated-zone {
+  width: 100%;
   min-height: 668px;
   height: 100vh;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  background-image: var(--background-image);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+
 }
 
 .header__theme-menu {
@@ -57,6 +62,7 @@
 }
 
 .rec-container {
+  text-transform: uppercase;
   position: absolute;
   top: 20px;
   right: 30px;
@@ -110,14 +116,16 @@
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
-  line-height: 23px;
+  line-height: 23.4px;
   color: var(--color-description-title);
   background-color: var(--accent-color);
   white-space: pre-line;
 }
 
-.corner-borders::before,
-.corner-borders::after {
+.footer__container::after,
+.footer__container::before,
+.decorated-zone::before,
+.decorated-zone::after {
   content: "";
   position: absolute;
   width: 25px;
@@ -125,14 +133,16 @@
   box-sizing: border-box;
 }
 
-.corner-borders::before {
+.footer__container::before,
+.decorated-zone::before {
   top: 20px;
   right: 20px;
   border-top: 1px solid var(--nav-bar-color);
   border-right: 1px solid var(--nav-bar-color);
 }
 
-.corner-borders::after {
+.footer__container::after,
+.decorated-zone::after {
   bottom: 20px;
   left: 20px;
   border-bottom: 1px solid var(--nav-bar-color);
@@ -152,14 +162,17 @@
   grid-row-gap: 0px;
 }
 
-.chapter__title {
-  color: var(--nav-bar-color);
-  grid-area: 1 / 1 / span 1 / span 1;
+.general__headers{
   font-family: "IBM Plex Mono", monospace;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
-  line-height: 23px;
+  line-height: 23.4px;
+}
+
+.chapter__title {
+  color: var(--nav-bar-color);
+  grid-area: 1 / 1 / span 1 / span 1;
   white-space: pre-line;
 }
 
@@ -168,14 +181,13 @@
 }
 
 .explanations__title {
-  font-family: "IBM Plex Mono", monospace;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 23px;
   color: var(--color-description-title);
   background-color: var(--accent-color);
   margin-bottom: 10px;
+}
+
+.explanations__title__section__how__consentrate{
+  margin-bottom: 0px;
 }
 
 .chapter__title-consentration {
@@ -187,13 +199,27 @@
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
-  line-height: 23px;
+  line-height: 23.4px;
   color: var(--description-text-color);
   padding-bottom: 24px;
 }
 
-.hard__to__concentrate__explanations__description {
+.explanations__description {
+  padding-bottom: 0px;
+}
+
+
+/* .hard__to__concentrate__explanations__description {
   padding-bottom: 20px;
+} */
+
+.explanations__container{
+  padding-bottom: 20px;
+}
+
+
+.explanations__container:last-child{
+  padding-bottom: 0px;
 }
 
 .explanations__description__link {
@@ -219,14 +245,18 @@
   grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
   grid-template-rows: auto;
   grid-column-gap: 20px;
+  grid-row-gap:24px ;
 }
 
 .concentration__section {
   margin: 60px 20px 0px 20px;
 }
 
+.concentration__section-top{
+  margin: 80px 20px 0px 20px;
+}
+
 .how__to__concentrate__better__container {
-  padding-top: 3px;
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-template-rows: auto auto 1fr auto auto;
@@ -234,9 +264,9 @@
 }
 
 .explanations__title_card {
-  margin-bottom: 13px;
+  margin-bottom: 10px;
   font-weight: 400;
-  line-height: 23px;
+  line-height: 23.4px;
 }
 
 .explanations__title_card_start {
@@ -266,7 +296,6 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  position: absolute;
 }
 
 .tape__image {
@@ -274,7 +303,6 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  position: absolute;
 }
 
 .books__image {
@@ -291,7 +319,6 @@
 }
 
 .explanations__title-images {
-  margin-top: 45px;
   margin-bottom: 0px;
 }
 
@@ -319,34 +346,10 @@
   grid-area: 3 / 1 / span 1 / span 1;
 }
 
-.dark__theam__border__top__container {
-  position: absolute;
-  right: 20px;
-  top: 20px;
-  border-top: 1px solid var(--nav-bar-color);
-  border-right: 1px solid var(--nav-bar-color);
-}
-
-.dark__theam__border__top {
-  margin: 5px 5px 24px 19px;
-}
-
 .footer {
   margin-top: 60px;
   height: 100vh;
   min-height: 668px;
-}
-
-.dark__theam__border__bottom__container {
-  position: absolute;
-  left: 20px;
-  bottom: 20px;
-  border-bottom: 1px solid var(--nav-bar-color);
-  border-left: 1px solid var(--nav-bar-color);
-}
-
-.dark__theam__border__bottom {
-  margin: 24px 19px 5px 5px;
 }
 
 @media (max-width: 768px) {
@@ -368,14 +371,6 @@
     row-gap: 15px;
   }
 
-  .hard__to__concentrate__container {
-    gap: 20px;
-  }
-
-  .how__to__concentrate__better__container {
-    padding-top: 0;
-  }
-
   .header__description__container {
     padding-right: 20px;
     margin: 8px 0 0 0;
@@ -383,10 +378,6 @@
 
   .chapter__title {
     max-width: 236px;
-  }
-
-  .chapter__title-consentration {
-    padding-top: 6px;
   }
 
   .explanations__description_pre-line {
@@ -404,39 +395,18 @@
 
   .decrease__in__concentration__container {
     grid-template-columns: auto;
-    grid-column-gap: 20px;
-  }
-
-  .explanations__description {
-    padding-bottom: 23px;
-  }
-
-  .hard__to__concentrate__explanations__description {
-    padding-bottom: 21px;
-  }
-
-  .decrease__in__concentration__explanations__multitasking__container {
-    grid-area: 1 / 1 / span 1 / span 1;
-  }
-
-  .decrease__in__concentration__explanations__food__container {
-    grid-area: 2 / 1 / span 1 / span 1;
-  }
-
-  .decrease__in__concentration__explanations__gadget__container {
-    grid-area: 3 / 1 / span 1 / span 1;
+    grid-row-gap: 0px;
   }
 
   .street__image {
-    width: 100%;
     object-fit: contain;
     height: 100%;
     margin-top: 0px;
   }
 
 }
-
-@media (max-width: 375px) {
+/*слишком рано меняю медиа запрос  */
+@media (max-width: 410px) {
 
   .decorated-zone {
     row-gap: 20px;
@@ -452,10 +422,6 @@
     margin-left: 10px;
   }
 
-  .explanations__description__mobile__class {
-    padding-bottom: 20px;
-  }
-
   .header__title {
     font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   }
@@ -468,27 +434,11 @@
     white-space: normal;
   }
 
-  .explanations__container {
-    padding-bottom: 5px;
-  }
-
   .concentration__section-top {
-    margin: 28px 10px 23px 10px;
-  }
-
-  .explanations__title_card {
-    margin-bottom: 13px;
-    font-weight: 400;
-    line-height: 23px;
-  }
-
-  .explanations__title-images {
-    margin-top: 0px;
-    margin-bottom: 0px;
+    margin: 50px 10px 20px 10px;
   }
 
   .header__theme-menu {
-    justify-self: flex-end;
     align-self: center;
     padding-right: 10px;
     padding-top: 54px;
@@ -504,12 +454,14 @@
     padding-left: 10px;
   }
 
-  .corner-borders::before {
+  .footer__container::before,
+  .decorated-zone::before {
     top: 10px;
     right: 10px;
   }
 
-  .corner-borders::after {
+  .footer__container::after,
+  .decorated-zone::after {
     bottom: 10px;
     left: 10px;
   }
@@ -521,10 +473,6 @@
   .chapter__title {
     padding-bottom: 20px;
     max-width: 100%;
-  }
-
-  .chapter__title-bolt {
-    margin-bottom: 5px;
   }
 
   .hard__to__concentrate__container {
@@ -542,48 +490,9 @@
     grid-template-rows: auto auto minmax(0, 1fr) auto;
   }
 
-  .decrease__in__concentration__explanations__multitasking__container {
-    grid-area: 2 / 1 / span 1 / span 1;
-  }
-
-  .decrease__in__concentration__explanations__food__container {
-    grid-area: 3 / 1 / span 1 / span 1;
-  }
-
-  .decrease__in__concentration__explanations__gadget__container {
-    grid-area: 4 / 1 / span 1 / span 1;
-  }
-
   .how__to__concentrate__better__container {
-    margin-top: 0px;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto 1fr auto auto;
-    row-gap: 0px;
-  }
-
-  .imagine_the_sky_container {
-    grid-area: 2 / 1 / span 1 / span 1;
-  }
-
-  .turn__on__music_container {
-    grid-area: 3 / 1 / span 1 / span 1;
-  }
-
-  .take__walk_container {
-    grid-area: 4 / 1 / span 1 / span 1;
-  }
-
-  .eat__well_container {
-    grid-area: 5 / 1 / span 1 / span 1;
-    padding-bottom: 0px;
-  }
-
-  .read_container {
-    grid-area: 6 / 1 / span 1 / span 1;
-  }
-
-  .hard__to__concentrate__explanations__description {
-    padding-bottom: 18px;
   }
 
   .image__section {
@@ -606,7 +515,7 @@
 
   .ice-cream__image {
     grid-area: 2 / 1 / span 1 / span 1;
-    height: 100%;
+    /* height: 100%; */
   }
 
   .tape__image {
@@ -626,7 +535,6 @@
 
   .footer {
     margin: 36px 0 0 0;
-    height: 100vh;
   }
 
   .footer__title {
